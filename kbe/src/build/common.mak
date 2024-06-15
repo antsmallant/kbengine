@@ -282,6 +282,8 @@ CXXFLAGS += -fno-strict-aliasing -Wno-non-virtual-dtor
 CXXFLAGS += -Wno-invalid-offsetof
 CXXFLAGS += -Werror
 CXXFLAGS += -std=c++11
+CXXFLAGS += -Wno-format-truncation
+CXXFLAGS += -DOPENSSL_API_COMPAT=0x10100000L
 
 CPPFLAGS += -DKBE_SERVER -MMD -DKBE_CONFIG=\"${KBE_CONFIG}\"
 
